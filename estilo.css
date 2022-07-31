@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.5em;
+}
+img {
+  max-width: 100%;
+}
+
+button {
+  font-size: 1.5em;
+  background-color: #53079a;
+  border-radius: 25px;
+  border: 15px solid #53079a;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: blueviolet;
+  border: 15px solid blueviolet;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+.nav {
+  border-bottom: 2px solid grey;
+}
+
+.nav__toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0 1rem;
+  right: 0;
+}
+
+.nav__toggle svg {
+  width: 40px;
+}
+
+.nav__toggle .close {
+  display: none;
+}
+
+.nav__toggle .close
+.nav__toggle .menu {
+  margin-top: 15px;
+}
+
+.nav__checkbox {
+  display: none;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem;
+}
+
+.nav__menu li {
+  list-style-type: none;
+  display: none;
+}
+
+.nav__menu li:first-child {
+  margin-right: auto;
+  display: block;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav__menu a:hover {
+  color: blueviolet;
+}
+
+.menu__logo {
+  height: 40px;
+}
+
+.menu__logo img{
+  height: 100%;
+}
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 96vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../media/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: white;
+  margin-bottom: 50px;
+}
+
+#hero h2 {
+  color: white;
+  font-size: 2em;
+  margin-top: 0%;
+  margin-bottom: 50px;
+}
+
+#hero a {
+  text-decoration: none;
+  color: white;
+}
+
+#sobre-mi .container {
+  text-align: center;
+  padding: 100px 15px;
+}
+
+#sobre-mi h2 {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+#habilidades {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+#habilidades .container {
+  padding: 50px 10px;
+}
+
+#habilidades h2 {
+  font-size: 3em !important;
+  margin-bottom: 80px;
+}
+
+#habilidades p {
+  display: none;
+}
+
+#habilidades .carta {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 50px 50px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../media/html-css.jpg");
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../media/script.png");
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../media/github.png");
+}
+.carta:nth-child(4) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../media/figma.jpg");
+}
+#aprendizaje .container {
+  text-align: center;
+  padding: 80px 15px;
+}
+
+#aprendizaje li {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000;
+  color: white;
+  height: 90vh;
+}
+
+#contacto h2 {
+  font-size: 9vw;
+  padding: 20px;
+}
+
+#contacto button {
+  font-size: 3vw;
+  background-color: #000;
+  border: none;
+}
+
+#contacto a {
+  text-decoration: none;
+  color: white;
+}
+
+footer p {
+  margin: 20px;
+  padding: 10px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+  .nav__toggle {
+    display: none;
+  }
+  .nav__menu {
+    flex-direction: row;
+  }
+
+  .nav__menu li {
+    display: block;
+  }
+
+  .nav__menu a {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  #hero h1 {
+    font-size: 6em;
+  }
+
+  #sobre-mi .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #sobre-mi .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #sobre-mi h2 {
+    margin-top: 0;
+  }
+  #sobre-mi .img-sobre-mi {
+    background-image: url("../media/sobre-mi.jpg");
+    background-repeat: no-repeat;
+    background-color: cover;
+    background-position: center center;
+    width: 600px;
+    height: 400px;
+  }
+  #habilidades .habilidades-carta {
+    display: flex;
+    justify-content: center;
+  }
+
+  #habilidades p {
+    display: block;
+  }
+
+  #habilidades h3 {
+    margin-top: 5px;
+    margin-bottom: 30px;;
+  }
+
+  #habilidades h2 {
+    font-size: 2em;
+  }
+
+  #habilidades .carta {
+    padding: 30px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  #aprendizaje .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #aprendizaje .texto-aprendizaje {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #aprendizaje h2 {
+    margin-top: 0;
+  }
+  #aprendizaje .img-aprendizaje {
+    background-image: url("../media/Platzi.jpg");
+    background-repeat: no-repeat;
+    background-color: cover;
+    background-position: center center;
+    background-size: contain;
+    width: 600px;
+    height: 300px;
+  }
+
+  #contacto h2 {
+    font-size: 4em;
+  }
+
+  #contacto p {
+    font-size: 1em;
+  }
+
+  #contacto button {
+    font-size: 2em;
+    background-color: #000;
+    border: none;
+  }
+
+  footer .container {
+    height: 150px;
+    justify-content: flex-end;
+  }
+}
