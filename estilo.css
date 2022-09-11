@@ -1,7 +1,13 @@
+/* Globales */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,16 +17,16 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
 }
 h2 {
-  font-size: 2.7em;
+  font-size: 3em;
 }
 h3 {
   font-size: 2em;
 }
 p {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 ul {
   list-style: none;
@@ -31,6 +37,8 @@ li {
 img {
   max-width: 100%;
 }
+
+/* Barra Navegacion */
 
 button {
   font-size: 1.5em;
@@ -47,6 +55,10 @@ button:hover {
 
 header {
   background-color: rgb(245, 245, 245);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .nav {
@@ -125,6 +137,8 @@ header {
   display: none;
 }
 
+/* Banner */
+
 #hero {
   display: flex;
   align-items: center;
@@ -165,10 +179,14 @@ header {
   padding: 100px 15px;
 }
 
+/* Sobre Mi */
+
 #sobre-mi h2 {
   font-size: 3em;
   margin-bottom: 30px;
 }
+
+/* Habilidades */
 
 #habilidades {
   background-color: rgb(30, 30, 30);
@@ -232,6 +250,8 @@ header {
     ),
     url("../media/git.png");
 }
+
+/* Aprendisaje */
 #aprendizaje .container {
   text-align: center;
   padding: 80px 15px;
@@ -241,6 +261,8 @@ header {
   margin: 15px 0;
   font-weight: bold;
 }
+
+/* Contacto */
 
 #contacto {
   display: flex;
@@ -269,6 +291,8 @@ header {
   color: white;
 }
 
+/* Footer */
+
 footer p {
   margin: 20px;
   padding: 10px;
@@ -281,6 +305,8 @@ footer .container {
   justify-content: center;
   align-items: flex-end;
 }
+
+/* Movile */
 
 @media (min-width: 720px) {
   .nav__toggle {
